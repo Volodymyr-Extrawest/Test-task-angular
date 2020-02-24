@@ -1,0 +1,71 @@
+<section id="features" style="overflow: hidden;">
+  <div class="content bg-white content-container">
+    <div fxLayout="column" fxLayoutAlign="space-between center">
+      <h2 moveScrollAnimate>{{ header }}</h2>
+      <div style="height: 4px; width: 40px; background: #72b4b6; margin: 20px 0"></div>
+      <p class="text-center lh-175 lead" fadeScrollAnimate>
+        {{ subHeader1 }}<br/>
+        {{ subHeader2 }}
+      </p>
+    </div>
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-around center">
+      <div fxFlex="5"></div>
+      <div fxFlex="30" fxLayout="column" fxLayoutAlign="center">
+        <div
+          fxLayout="row"
+          fxLayoutAlign="space-round"
+          class="feature-item"
+          style="padding-bottom: 30px"
+          moveScrollLeftAnimate
+        >
+          <app-icon [name]="'volume-2'"></app-icon>
+          <div fxFlex="4"></div>
+          <div>
+            <h3 class="mt-0">{{ featureHeader1 }}</h3>
+            <p class="lead">
+              {{ featureDescription1 }}
+            </p>
+          </div>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="space-round" class="feature-item" moveScrollLeftAnimate>
+          <app-icon [name]="'rotate-cw'"></app-icon>
+          <div fxFlex="4"></div>
+          <div>
+            <h3 class="mt-0">{{ featureHeader2 }}</h3>
+            <p class="lead">{{ featureDescription2 }}</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img [src]="phoneImg" moveScrollAnimate [offset]="400"/>
+      </div>
+      <div fxFlex="30" fxLayout="column" fxLayoutAlign="center">
+        <div
+          fxLayout="row"
+          fxLayoutAlign="space-round"
+          class="feature-item"
+          style="padding-bottom: 30px"
+          moveScrollRightAnimate
+        >
+          <app-icon [name]="'monitor'"></app-icon>
+          <div fxFlex="4"></div>
+          <div>
+            <h3 class="mt-0">{{ featureHeader3 }}</h3>
+            <p class="lead">{{ featureDescription3 }}</p>
+          </div>
+
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-round" class="feature-item" moveScrollRightAnimate>
+          <app-icon [name]="'battery'"></app-icon>
+          <div fxFlex="4"></div>
+          <div>
+            <h3 class="mt-0">{{ featureHeader4 }}</h3>
+            <p class="lead">{{ featureDescription4 }}</p>
+          </div>
+        </div>
+      </div>
+      <div fxFlex="5"></div>
+    </div>
+  </div>
+</section>
